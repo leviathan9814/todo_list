@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To-Do List</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bad+Script">
+        <link rel="shortcut icon" href="assets/favicon.ico">
+        <link rel="icon" type="image/gif" href="assets/animated_favicon.gif">
+    </head>
+    <body>
+        <div id="todo">
+            <h1>Мій список справ <i id="pensil" class="fas fa-pencil-alt"></i></h1>
+            <input type="text" placeholder="Добавити в список">
+            <ul class="todos">
+                <li><span class="todo-text">Почитати книгу</span><span class="todo-trash"><i class="fas fa-trash-alt"></i></span></li>
+                <li><span class="todo-text">Погуляти</span><span class="todo-trash"><i class="fas fa-trash-alt"></i></span></li>
+            </ul>
+            <div id="buttons">
+                <button class="save">Зберегти</button>
+                <button class="clear">Очистити</button>
+                <button class="showTips">Довідка</button>
+            </div>
+        </div>
+        <div id="overlay">
+            <a href="javascript:void(0)" class="closeTips">&times</a>
+            <ul class="tips">
+                <li>Щоб сховати або показати поле введення, клікніть на олівець</li>
+                <li>Для додавання списку справ напишіть текст в поле введення і натисніть Enter</li>
+                <li>Щоб видалити один пункт, наведіть на нього і натисніть на значок кошика</li>
+                <li>Щоб видалити всі списки справ, натисніть "Очистити"</li>
+                <li>Натисніть "Зберегти", щоб зберегти список справ на потім</li>
+            </ul>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
